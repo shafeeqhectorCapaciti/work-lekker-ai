@@ -19,7 +19,7 @@
 1. **Live Web App:** Access the hosted application directly via the published Lovable URL:`https://work-lekker.lovable.app`
 2. **Run Locally:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/shafeeqhectorCapaciti/work-lekker-ai.git
    cd work-lekker-ai
    npm install
    npm run dev
