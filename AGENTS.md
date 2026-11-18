@@ -28,3 +28,10 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- AI calls live in `src/lib/ai/gateway.server.ts` and are exposed only through server functions in `src/lib/ai-tools.functions.ts` — keeps the AI key and prompts server-side.
+- Tool input schemas, prompts and the Eisenhower priority logic live in `src/lib/tool-rules.ts` (client-safe, tested in `src/test/tool-rules.test.ts`) — one source of truth for browser validation and server prompts.
+- Sidebar and dashboard read the tool list from `src/lib/tools-nav.ts` — add a tool there plus its route file.
+- The app is dark-only: color tokens live in `:root` of `src/styles.css`; no light theme or toggle.
