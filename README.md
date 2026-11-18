@@ -16,11 +16,11 @@
 * **Version Control:** Git & GitHub
 
 ## Setup Instructions
-1. **Live Web App:** Access the hosted application directly via the published Lovable URL: `https://work-lekker.lovable.app`
+1. **Live Web App:** Access the hosted application directly via the published Lovable URL:`https://work-lekker.lovable.app`
 2. **Run Locally:**
    ```bash
    git clone https://github.com
-   cd work-lekker
+   cd work-lekker-ai
    npm install
    npm run dev
    ```
